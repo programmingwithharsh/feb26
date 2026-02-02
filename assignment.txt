@@ -1,0 +1,132 @@
+Assignment 1 - Lab setup
+------------------------
+
+1. Visual studio code
+https://code.visualstudio.com/download
+
+2. Google Chrome Browser
+
+3. Nodejs
+https://nodejs.org/en/download/prebuilt-installer
+
+Open cmd / terminal and type 
+
+node -v (to check node version)
+npm -v (to check npm version)
+
+https://www.npmjs.com/
+Node Package Manager is also getting installed with nodejs
+
+To Manage Multiple node version, we can install nvm
+nvm install 24
+nvm list 
+nvm use 24
+4. React Installation
+
+Create react javascript application using vite
+
+npm create vite@latest dashboard (dashboard is project name)
+
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  JavaScript
+│
+◇  Use rolldown-vite (Experimental)?:
+│  No
+│
+◇  Install with npm and start now?
+│  Yes
+│
+◇  Scaffolding Project
+
+Local:   http://localhost:5173/
+
+
+Create react typescript application using vite
+
+npm create vite@latest dashboardTypescript  (dashboardTypescript is project name)
+Need to install the following packages:
+create-vite@8.2.0
+Ok to proceed? (y) y
+
+
+> npx
+> "create-vite" dashboardTypescript
+
+│
+◇  Package name:
+│  dashboardTypescript
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  TypeScript
+│
+◇  Use rolldown-vite (Experimental)?:
+│  No
+│
+◇  Install with npm and start now?
+│  Yes
+│
+
+
+To stop react project we can type ctrl+c 
+Again to start application, we can go inside project folder and run below command 
+
+npm run dev
+
+Open package.json file inside dashboard react app to check react version and paste version in private comment
+
+Create React Application using 3 different ways below 
+1. create-react-app module (Recommended)
+2. using next.js
+3. webpack module bundler (customised option)
+
+
+Assignment 2 - Create array and object in Javascript
+----------------------------------------------------
+
+Create array and object in Javascript and print the result in console
+
+1. Create state variable which contains multiple cities (5) for example
+
+state city1, city2, city3, city4, city5
+
+2. Create country object which contains multiple state (5) along with cities (5), for example
+
+country object
+    state city1, city2, city3, city4, city5
+    state city1, city2, city3, city4, city5
+    state city1, city2, city3, city4, city5
+    state city1, city2, city3, city4, city5
+    state city1, city2, city3, city4, city5
+
+Points to remember 
+Don't use space in object key
+In case of multiple words for object key, for example Madhya Pradesh use either camelcase madhyaPradesh or underscore madhya_pradesh in between words.
+Format code before submit it.
+Use actual state and city name
+
+Assignment 3 - Display your name in browser using react javascript library
+--------------------------------------------------------------------------
+
+Display your name in browser using react
+
+Delete all files from the src folder except main.jsx, inside this file write your name to display in browser, for example 
+
+main.jsx
+
+import { createRoot } from 'react-dom/client'; // Importing es6 module
+
+let message = 'programming with Harsh'
+createRoot(document.getElementById('root')).render(
+message
+)
+For reference use this - https://github.com/programmingwithharsh/feb26/blob/main/src/main.jsx
+
+To run react project, we can use below command 
+npm run dev
