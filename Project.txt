@@ -1,0 +1,96 @@
+Project - Communication Application (React Javascript Library)
+
+1. Create below Class or Functional Components
+Welcome
+Login
+Register
+LoginSuccessful
+RegisterSuccessful
+ChatList
+UserList - delete user modal
+EditUser
+DocumentList - add, edit and delete modal 
+Logout
+2. Use Either Functional or Class Component
+
+Functional Component Hooks
+useState
+useEffect
+useRef
+useReducer
+useContext
+useMemo
+Class Component lifecycle
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+Mounting
+constructor()
+render()
+static getDerivedStateFromProps(props, state) - state update based on props value
+componentDidMount()
+Updating
+static getDerivedStateFromProps()
+shouldComponentUpdate()
+getSnapshotBeforeUpdate() + componentDidUpdate()
+Unmounting
+componentWillUnmount()
+3. Use React State Object to keep all data, use React State in all components
+4. In case you are passing any information use React Props
+5. Use React Events for all event operations
+6. Use React Routing for Navigation purpose
+7. For CSS Use React Style approach
+8. For any icons use font-awesome library
+9. For rendering html content use React JSX
+10. For Forms use React Forms
+11. Create Reusable components 
+12. Only logged in user can access chats, users and documents page
+13. We can edit any user, but logged in user cannot edit email id
+14. Delete link is disabled for logged in user
+
+4 localstorage 
+users - to store user information
+chats - to store chat information
+uploads - to store uploads information
+loggedInUser - store logged in user information, when we click on logout delete this loggedInUser localstorage
+Note: 
+Use css or scss
+Use bootstrap or any module for example UI Material
+Go from top to bottom
+Project Marks (100)
+
+1. Proper folder structure and file name - 5 Marks
+2. Format code by VS code formatter- 5 Marks
+3. Proper comments - 5 Marks
+4. Proper Naming convention for CSS and Javascript - 5 Marks
+Either use camelcase (Javascript) or Hypen (CSS) for name
+loyaltyprogram
+
+for example
+loyaltyProgram for Javascript
+loyalty-program for CSS
+loyalty_program
+
+5. Use class instead of Id for CSS, and for Javascript use id - 5 Marks
+6. Use External CSS and Components, do not use inline CSS - 5 Marks
+7. UI should be same as Project Wireframe - 20 Marks (not mandatory)
+8. Use ES6 concepts where ever needed for example use let, const instead of var, arrow function, template literal, spread operator - 5 Marks
+9. Create reusable component as more as possible - 5 Marks
+10. Individual Marks - 40 Marks
+
+Note
+
+1. Share Github url
+32 Actual File upload is not require, only add filename and label inside name localstorage
+
+Important points to remember 
+1. Created Component, Routing and Navigation
+2. Welcome, Login, Login Successful, Register, Register Successful, User List, Edit User, Manage Users, Group Chat, Manage Documents, Logout User Interface.
+3. Internal Navigation
+4. Add user delete modal, add, edit and delete upload modal, use bootstrap modal or custom modal.
+5. Add validations on login, register page, add chat message, edit user page, add, edit and delete upload modal.
+6. Implement local storage logic and make website dynamic.
+7. Those who will complete Register, Login, Display Userlist, Edit, Delete User along with localstorage can give a project demo.
+
+Summary
+
+1. Working on UI part
+2. Working on Functionality part
