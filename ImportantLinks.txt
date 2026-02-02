@@ -1,0 +1,102 @@
+Important Links | VS Code Extensions | Google Chrome Extensions
+
+HTML
+https://developer.mozilla.org/en-US/docs/Web/HTML
+
+SVG
+https://developer.mozilla.org/en-US/docs/Web/SVG
+
+CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS
+
+SCSS
+https://sass-lang.com/guide
+
+Bootstrap
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+Javascript
+https://developer.mozilla.org/en-US/docs/Web/javascript
+https://javascript.info/
+
+Typescript
+https://www.typescriptlang.org/
+
+JSON
+https://jsonlint.com/
+https://jsonformatter.org/
+
+Dummy APIs
+https://jsonplaceholder.typicode.com/users
+
+React
+https://react.dev/
+
+React Security, Scalability, Maintenance & Performance
+https://brainhub.eu/library/react-security-scalability
+
+React Native
+https://reactnative.dev/
+
+Redux
+https://redux.js.org/
+
+Node package manager
+https://www.npmjs.com/
+
+Yarn 
+https://yarnpkg.com/
+
+Download Nodejs
+https://nodejs.org/en/download
+
+Download VS Code
+https://code.visualstudio.com/download
+
+Compare code online
+https://www.diffchecker.com/text-compare/
+
+React Chart.js
+https://www.npmjs.com/package/react-chartjs-2
+
+D3 Chart using Javascript and SVG
+https://d3js.org/
+
+Interview preparation
+HTML - https://github.com/learning-zone/html-basics
+CSS and Flexbox - https://github.com/learning-zone/css-basics
+Bootstrap - https://github.com/learning-zone/bootstrap-css-basics
+Javascript  - https://github.com/sudheerj/javascript-interview-questions
+jQuery - https://github.com/Devinterview-io/jquery-interview-questions
+Nodejs - https://gist.github.com/paulfranco/9f88a2879b7b7d88de5d1921aef2093b
+Mongodb - https://gist.github.com/paulfranco/7436965eb26b9bb1310736f2bd6b6905
+Reactjts - https://github.com/sudheerj/reactjs-interview-questions
+Angular - https://github.com/sudheerj/angular-interview-questions
+VS Code Important Extensions
+AutoFill Arrays by civAnimal
+Bootstrap 5 Quick Snippets by Anbuselvan Rocky
+ES7+ React/Redux/React-Native snippets by dsznajder
+Live Server by Ritwick Dey
+Prettier - Code formatter by Prettier
+Simple React Snippets by Burke Holland
+Open pdf in vs code - vscode-pdf tomoki1207
+SVG Snippets by sidthesloth
+Jest Snippetsv by andys8
+Jest by Orta
+CSS Flexbox Cheatsheetv by Dzhavat Ushev
+Chrome Extensions
+
+ColorPick Eyedropper
+https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg
+
+Ruler Measurement
+https://chrome.google.com/webstore/detail/ruler-measurement/fkfkjailjcijmghkonghlclbjkopjbgh
+
+React Developer Tools
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+Redux devtool
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+
+Mobile simulator responsive
+https://chromewebstore.google.com/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk?hl=en&pli=1
