@@ -3,11 +3,13 @@ import Star from "./Star";
 import Title from "./Title";
 import Welcome from "./Welcome";
 import Carousel from "./Carousel";
+import Modal from "./Modal";
 
 function App() {
     return (
         <div>
             <Carousel />
+            <Modal />
             <h1>This is App functional component</h1>
             <h2>2 + 2 is {2 + 2}</h2>
             <ProductList />
