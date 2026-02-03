@@ -20,7 +20,13 @@ const element4 = <ul>
   ))}
 </ul>
 */
+let username = "Rajesh"; // String
+let interests = ["Playing Cricket", "Carom", "Travelling", "Marshel Art"]; // Array
+let birth = { // Object
+  year: 2000,
+  place: "Ratnagiri"
+};
 
 createRoot(document.getElementById('root')).render(
-    <App />
+  <App usernameProps={username} interestsProps={interests} birthProps={birth} />
 )
