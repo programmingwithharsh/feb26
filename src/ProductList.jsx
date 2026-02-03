@@ -3,8 +3,11 @@ import Star from "./Star";
 
 const ProductList = (props) => {
     console.log(props);
+    let myStyle = { backgroundColor: "red", color: "white" };
     return (<div>
-        <h1>This is Product List Functional Component</h1>
+        <h1 style={{ backgroundColor: "red", color: "white" }}>This is Inline CSS</h1>
+        <h1 style={myStyle}>This is Internal CSS</h1>
+        <h1 className="header">This is External CSS</h1>
         <div className="table-responsive">
             <table className="table table-striped table-bordered table-hover">
                 <thead>
@@ -28,7 +31,7 @@ const ProductList = (props) => {
                             <td>{product.releaseDate}</td>
                             <td>{product.description}</td>
                             <td>{product.price}</td>
-                            <td>{product.starRating}<Star /></td>
+                            <td><Star rating={product.starRating} /></td>
                             <td>Edit | <button className="btn btn-link" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button></td>
                         </tr>
                     ))}

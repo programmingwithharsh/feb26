@@ -2,3 +2,7 @@
 .navbar-brand {
   color: white !important;
 }
+
+.header {
+  border: 2px solid red;
+}

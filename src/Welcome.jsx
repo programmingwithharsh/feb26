@@ -8,7 +8,7 @@ class Welcome extends React.Component {
             username: "Srinath",
             address: "Hyderabad"
         }
-        console.log("Constructor");
+        console.log("1 Constructor");
         // this.updateUsername = this.updateUsername.bind(this);
     }
 
@@ -25,8 +25,28 @@ class Welcome extends React.Component {
         })
     }
 
+    componentDidMount() {
+        console.log("3 ComponentDidMount");
+        localStorage.setItem("active", true); // boolean
+        localStorage.setItem("x", 2); // number
+        localStorage.setItem("username", "Kiranya"); // string
+        localStorage.setItem("interests", ["Reading", "Watching", "Dreaming", "Travelling"]); // array
+        localStorage.setItem("employee", JSON.stringify({ id: 1, name: "Kiranya" }));
+        localStorage.setItem("employees", JSON.stringify([{ id: 1, name: "Kiranya" }, { id: 2, name: "Anjali" }]));
+
+        console.log(typeof localStorage.getItem("active"));
+        console.log(typeof localStorage.getItem("x"));
+        console.log(typeof localStorage.getItem("username"));
+        console.log(typeof localStorage.getItem("interests"));
+        console.log(typeof localStorage.getItem("employee"));
+        console.log(typeof localStorage.getItem("employees"));
+
+        console.log(JSON.parse(localStorage.getItem("employee")));
+        console.log(JSON.parse(localStorage.getItem("employees")));
+    }
+
     render() { // Component lifecycle
-        console.log("Render");
+        console.log("2 Render");
         console.log("State", this.state);
 
         return (<div>

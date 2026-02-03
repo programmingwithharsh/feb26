@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import "./style.css";
+import "./style.css"; // External CSS
 
 function Nav() {
     return (<>
@@ -22,6 +22,9 @@ function Nav() {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/title">Title</Link>
+                        </li>
+                         <li className="nav-item">
+                            <Link className="nav-link" to="/hooks">Hooks</Link>
                         </li>
                     </ul>
                 </div>

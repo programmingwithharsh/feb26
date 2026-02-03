@@ -4,6 +4,9 @@ import Welcome from "./Welcome";
 import Nav from "./Nav";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AddProduct from "./Addproduct";
+import Login from "./Login";
+import Register from "./Register";
+import HooksExample from "./Hooks/HooksExample";
 
 function App(props) {
     console.log(props);
@@ -67,7 +70,10 @@ function App(props) {
                     <Route path="/products" element={<ProductList products={products} />} />
                     <Route path="/title" element={<Title username={props.usernameProps} />} />
                     <Route path="/addproduct" element={<AddProduct />} />
+                    <Route path="/hooks" element={<HooksExample />} />
                 </Route>
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
             </Routes>
         </BrowserRouter>
     );
