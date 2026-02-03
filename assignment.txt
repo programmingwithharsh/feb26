@@ -130,3 +130,81 @@ For reference use this - https://github.com/programmingwithharsh/feb26/blob/main
 
 To run react project, we can use below command 
 npm run dev
+
+Assignment 4 - Create Class or Functional Components in react 
+-------------------------------------------------------------
+
+Create Class or Functional Components in react
+
+Create App Class Component and call App component inside main.jsx file
+Create below components and call inside App Component
+Welcome -> Display Welcome message class or functional component 
+Login  -> Display Login message class or functional component 
+Register -> Display Register message class or functional component 
+LoginSuccessful -> Display LoginSuccessful message class or functional component 
+RegisterSuccessful -> Display RegisterSuccessful message class or functional component 
+ChatList -> Display ChatList message class or functional component 
+UserList -> Display UserList message class or functional component 
+EditUser  -> Display EditUser message class or functional component 
+DocumentList -  -> Display DocumentList message class or functional component 
+Logout -> Display Logout message class or functional component 
+
+Assignment 5 - Implement React Routing
+---------------------------------------------------
+
+Implement React Routing 
+
+Create menu (Nav.jsx) which contains Group Chat | Manage Users | Manage Documents | Logout as per project wireframe 
+
+When user click on Group Chat call ChatList component 
+When user click on Manage Users call UserList component 
+When user click on Manage Documents call DocumentList component 
+When user click on Logout call Logout component 
+By default Welcome component 
+
+Step 1
+npm i react-router-dom
+
+Step 2
+Create Nav Component, Nav.jsx which contains below code
+
+import { Link, Outlet } from 'react-router-dom';
+
+// Home | AddProduct | Products | Title | Register | Bootstrap
+function Nav() {
+return (<>
+<nav>
+<Link to="/">Home</Link>|
+<Link to="/addproduct">AddProduct</Link>|
+<Link to="/products">Products</Link>|
+<Link to="/title">Title</Link>|
+<Link to="/app">App</Link>|
+<Link to="/users">Users</Link>
+</nav>
+<div>
+<Outlet />
+</div>
+</>);
+}
+
+export default Nav;
+
+Step 3
+inside App.jsx file, we can update routing logic
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Nav from "./Nav";
+render() { // lifecycle
+console.log("This is render lifecycle - 2");
+console.log(this.state);
+return <BrowserRouter>
+<Routes>
+<Route path="/" element={<Nav />}>
+<Route index element={<Welcome title="Welcome" user="Devender" employeeCode="200" />} />
+<Route path="/products" element={<ProductList message="Product List" products={this.state.products} />} />
+<Route path="/addproduct" element={<AddProduct />} />
+<Route path="/title" element={<Title />} />
+</Route>
+</Routes>
+</BrowserRouter>}
+

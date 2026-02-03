@@ -1,4 +1,6 @@
 import Product from "./Product";
+import Star from "./Star";
+
 const ProductList = (props) => {
     console.log(props);
     return (<div>
@@ -26,7 +28,7 @@ const ProductList = (props) => {
                             <td>{product.releaseDate}</td>
                             <td>{product.description}</td>
                             <td>{product.price}</td>
-                            <td>{product.starRating}</td>
+                            <td>{product.starRating}<Star /></td>
                             <td>Edit | <button className="btn btn-link" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button></td>
                         </tr>
                     ))}

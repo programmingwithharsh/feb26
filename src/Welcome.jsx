@@ -1,4 +1,6 @@
 import React from "react";
+import Carousel from "./Carousel";
+
 class Welcome extends React.Component {
     constructor() { // Component lifecycle
         super();
@@ -28,6 +30,7 @@ class Welcome extends React.Component {
         console.log("State", this.state);
 
         return (<div>
+            <Carousel />
             <h1>This is welcome class component</h1>
             <h2>Username is {this.state.username}</h2>
             <div><button className="btn btn-primary m-2" onClick={this.updateUsername}>Update Username</button></div>

@@ -1,9 +1,9 @@
 import ProductList from "./ProductList";
-import Star from "./Star";
 import Title from "./Title";
 import Welcome from "./Welcome";
-import Carousel from "./Carousel";
-import Modal from "./Modal";
+import Nav from "./Nav";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AddProduct from "./Addproduct";
 
 function App(props) {
     console.log(props);
@@ -60,17 +60,16 @@ function App(props) {
         }
     ];
     return (
-        <div>
-            <Carousel />
-            <Modal />
-            <h1>This is App functional component</h1>
-            <h2>2 + 2 is {2 + 2}</h2>
-            <h3>Username props is {props.usernameProps}</h3>
-            <ProductList products={products} />
-            <Star />
-            <Title username={props.usernameProps} />
-            <Welcome />
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Nav />}>
+                    <Route index element={<Welcome />} />
+                    <Route path="/products" element={<ProductList products={products} />} />
+                    <Route path="/title" element={<Title username={props.usernameProps} />} />
+                    <Route path="/addproduct" element={<AddProduct />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 
