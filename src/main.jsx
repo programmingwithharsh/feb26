@@ -3,6 +3,7 @@ import App from './App'; // import a component
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
+import 'font-awesome/css/font-awesome.css';
 
 /*
 const flowers = ["Rose", "Dahlia", "Magnolia", "Tulip", "Daisy"]; // array
