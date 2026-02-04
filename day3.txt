@@ -1,0 +1,151 @@
+Day 3
+Page not found
+Dynamic Url
+Dynamic Link
+Get params from url
+Navigate using functional component
+Created GET, POST, PUT and DELETE API using node.js
+Consume API using Javascript fetch method
+Consume API using Javascript axios module
+fetch vs Axios
+Typescript
+React with Typescript
+State and prop using Typescript
+ES6 Features
+prototype
+contructor function
+lexical scoping using arrow function
+local vs global variable
+class
+property
+method
+Inheritance
+static method
+Map and Set
+Template Literals
+Convert array into string
+Convert string into array
+Array and Object Destrucuting
+Spread operator
+Rest of items
+Merge Object
+Merge array
+Assignment
+
+Project Update 
+Tomorrow
+React Form validation using class component
+Navigate using class component
+Conditional Rendering in JSX
+Promise
+Functional Component Hooks
+
+Project related HTML pages
+Welcome page
+Login page
+Login Successful page
+Register page
+Register Successful page
+Use HTML form for Localstorage
+
+Functional Component
+    Normal Function 
+    Arrow function 
+
+Class Component
+
+
+Routing 
+-------
+
+http://localhost:5173/
+http://localhost:5173/products
+http://localhost:5173/addproduct
+http://localhost:5173/title
+http://localhost:5173/hooks
+
+
+http://localhost:5173/products/1 -> Call product detail component
+http://localhost:5173/products/2 -> Call product detail component
+http://localhost:5173/products/3 -> Call product detail component
+http://localhost:5173/products/4 -> Call product detail component
+http://localhost:5173/products/5 -> Call product detail component
+http://localhost:5173/products/6 -> Call product detail component
+
+
+Users CRUD 
+-----------
+Register User
+User list - Reference of Product List
+Edit User - 
+Delete User (Modal)
+
+users component 
+    UserList -> state -> users
+    EditUser -> Pass function as props 
+
+Localstorage
+
+4 localstraoge - users, loggedinUser, chats and uploads 
+
+array of object - [{}, {}];
+
+localStorage.setItem
+localStorage.getItem
+localStorage.removeItem
+localStorage.clear
+
+
+React API calls 
+---------------
+
+fetch method 
+axios module 
+jquery ajax 
+rxjs ajax 
+...
+
+Day 4
+Redux
+
+Day 5 
+Next.js
+
+Javascript 
+----------
+Javascript is also called Ecmascript
+JavaScript is loosely type programming language.
+JavaScript is case sensitive
+.js 
+
+import and export (ES6 Feature)
+
+Typescript 
+-----------
+Superset of Javascript 
+Typescript is created by Microsoft
+Typescript is strongly type programming language
+.ts 
+npm i -g typescript 
+
+tsc 01.ts 
+convert in to .js
+
+Parent Class 
+Child Class
+
+Amitabh 
+    Audi 
+Abhishek
+    BMW
+
+
+
+
+
+Register Form 
+    Default data 
+
+
+registerForm 
+let defaultForm = registerForm

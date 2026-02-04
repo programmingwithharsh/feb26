@@ -1,0 +1,40 @@
+Day 1
+Lab setup
+React Installation
+Client side vs server side vs database vs nosql database
+Prerequisite - HTML, CSS and Javascript
+HTML Important Concepts
+CSS Important Concepts
+Run Javascript with Nodejs
+Javascript Fundamentals
+Variable
+String
+Array
+Object
+Function
+Nested object
+Nested Array
+JSON
+Question and Answer
+Important Links
+ES6 Features
+let
+const
+function
+function as a variable
+arrow function
+Eventloop
+Sync Vs Async
+Types of module
+Builtin module
+Third party module
+user defined module or custom module
+React Components
+React Functional component
+React Class component
+React Expression
+React JSX
+Project Discussion - Communication Application
+Assignment
+Pre assessment
+Feedback
