@@ -209,6 +209,7 @@ return <BrowserRouter>
 </BrowserRouter>}
 
 Assignment 6 - Create Class Car which contains properties and method
+--------------------------------------------------------------------
 Create class Car which contains below properties and method 
 
 Class Car 
@@ -217,3 +218,7 @@ Method - move(speed) -> blue color car is moving at 100 km/hr
 
 Create object for class Car and call it's properties and method.
 For reference - https://pastebin.com/7rzygQB5
+
+Assignment 7 - Create multiply arrow function
+----------------------------------------------
+Create multiply arrow function which will take 2 params, multiply it and print result in console
