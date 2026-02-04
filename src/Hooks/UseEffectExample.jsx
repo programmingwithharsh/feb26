@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 function UseEffectExample() {
     const [users, setUsers] = useState([{ "name": "Ajay" }]); // default data is empty array
@@ -17,7 +18,7 @@ function UseEffectExample() {
         fetch('http://localhost:3000/')
             .then((response) => response.json())
             .then((responseData) => {
-                console.log("Fetch", responseData);
+                console.log("Fetch response", responseData);
                 setUsers(responseData); // This is responsible to update users
             });
     }, []);
@@ -67,6 +68,18 @@ function UseEffectExample() {
         });
     }, [])
 
+    useEffect(() => {
+        axios.get("http://localhost:3000/")
+            .then(function (response) {
+                console.log("Axios response", response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
+            .finally(function () {
+                // always executed
+            });
+    }, [])
 
     return <>
         <h1>Use Effect Example - List of Users using fetch method</h1>

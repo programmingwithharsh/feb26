@@ -208,3 +208,12 @@ return <BrowserRouter>
 </Routes>
 </BrowserRouter>}
 
+Assignment 6 - Create Class Car which contains properties and method
+Create class Car which contains below properties and method 
+
+Class Car 
+Property - color 
+Method - move(speed) -> blue color car is moving at 100 km/hr
+
+Create object for class Car and call it's properties and method.
+For reference - https://pastebin.com/7rzygQB5
