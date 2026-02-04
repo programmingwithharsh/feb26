@@ -7,6 +7,7 @@ import AddProduct from "./Addproduct";
 import Login from "./Login";
 import Register from "./Register";
 import HooksExample from "./Hooks/HooksExample";
+import PageNotFound from "./PageNotFound";
 
 function App(props) {
     console.log(props);
@@ -71,6 +72,7 @@ function App(props) {
                     <Route path="/title" element={<Title username={props.usernameProps} />} />
                     <Route path="/addproduct" element={<AddProduct />} />
                     <Route path="/hooks" element={<HooksExample />} />
+                    <Route path="*" element={<PageNotFound />} />
                 </Route>
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
