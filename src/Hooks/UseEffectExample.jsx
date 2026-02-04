@@ -22,6 +22,52 @@ function UseEffectExample() {
             });
     }, []);
 
+    useEffect(() => {
+        fetch('http://localhost:3000/1')
+            .then((response) => response.json())
+            .then((responseData) => {
+                console.log("Fetch", responseData);
+            });
+    }, []);
+
+    useEffect(() => {
+        // Creating a resource
+        fetch('http://localhost:3000/', {
+            method: 'POST',
+            body: JSON.stringify({
+                userId: 1,
+                username: 'Aneesh'
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+            .then((response) => response.json())
+            .then((json) => console.log(json));
+    }, []);
+
+    useEffect(() => {
+        fetch('http://localhost:3000/', {
+            method: 'PUT',
+            body: JSON.stringify({
+                userId: 1,
+                username: 'Aneesh'
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+            .then((response) => response.json())
+            .then((json) => console.log(json));
+    }, []);
+
+    useEffect(() => {
+        fetch('http://localhost:3000/', {
+            method: 'DELETE',
+        });
+    }, [])
+
+
     return <>
         <h1>Use Effect Example - List of Users using fetch method</h1>
         {users.map((item, index) => (

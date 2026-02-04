@@ -4,6 +4,16 @@ import { Link } from "react-router-dom";
 
 const ProductList = (props) => {
     console.log(props);
+    /*
+        For Product List
+        1. Get data from products localstorage
+        2. Using map function iterate and display
+
+        For Delete operation
+        1. Store deletedId when we click on delete link
+        2. When we click on OK then use deletedId
+        3. Get data from Products localstorage and filter products based on deleteId
+    */
     let myStyle = { backgroundColor: "red", color: "white" };
     return (<div>
         <h1 style={{ backgroundColor: "red", color: "white" }}>This is Inline CSS</h1>
