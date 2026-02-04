@@ -1,5 +1,6 @@
 import Product from "./Product";
 import Star from "./Star";
+import { Link } from "react-router-dom";
 
 const ProductList = (props) => {
     console.log(props);
@@ -26,13 +27,13 @@ const ProductList = (props) => {
                     {props.products.map((product, index) => (
                         <tr key={index}>
                             <td><img src={product.imageUrl} width="50" height="50" /></td>
-                            <td>{product.productName}</td>
+                            <td><Link to={`/products/${product.productId}`}>{product.productName}</Link></td>
                             <td>{product.productCode}</td>
                             <td>{product.releaseDate}</td>
                             <td>{product.description}</td>
                             <td>{product.price}</td>
                             <td><Star rating={product.starRating} /></td>
-                            <td>Edit | <button className="btn btn-link" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button></td>
+                            <td><Link to={`/editproduct/${product.productId}`}>Edit</Link> | <button className="btn btn-link" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button></td>
                         </tr>
                     ))}
                 </tbody>

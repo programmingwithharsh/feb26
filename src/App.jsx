@@ -8,6 +8,8 @@ import Login from "./Login";
 import Register from "./Register";
 import HooksExample from "./Hooks/HooksExample";
 import PageNotFound from "./PageNotFound";
+import ProductDetail from "./ProductDetails";
+import EditProduct from "./EditProduct";
 
 function App(props) {
     console.log(props);
@@ -69,6 +71,8 @@ function App(props) {
                 <Route path="/" element={<Nav />}>
                     <Route index element={<Welcome />} />
                     <Route path="/products" element={<ProductList products={products} />} />
+                    <Route path="/products/:id" element={<ProductDetail />} />
+                    <Route path="/editproduct/:id" element={<EditProduct />} />
                     <Route path="/title" element={<Title username={props.usernameProps} />} />
                     <Route path="/addproduct" element={<AddProduct />} />
                     <Route path="/hooks" element={<HooksExample />} />
