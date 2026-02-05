@@ -11,6 +11,7 @@ import HooksExample from "./Hooks/HooksExample";
 import PageNotFound from "./PageNotFound";
 import ProductDetail from "./ProductDetails";
 import EditProduct from "./EditProduct";
+import { addProduct, removeProduct, loadProducts } from "./redux/actions";
 
 function App(props) {
 
@@ -78,7 +79,18 @@ function App(props) {
 
         const storedProducts = JSON.parse(localStorage.getItem("products"));
         setProducts(storedProducts);
-
+        props.dispatch(loadProducts()); // calling redux action
+        props.dispatch(addProduct({
+            "productId": 6,
+            "productName": "iPhone",
+            "productCode": "GDN-0011",
+            "releaseDate": "March 19, 2016",
+            "description": "Leaf rake with 48-inch wooden handle.",
+            "price": 19.95,
+            "starRating": 3.2,
+            "imageUrl": "https://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+        }));
+        props.dispatch(removeProduct(1));
     }, []);
 
     const addNewProduct = (productSubmitted) => {

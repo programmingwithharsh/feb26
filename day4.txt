@@ -14,6 +14,7 @@ Pure class component
 Class Component lifecycle
 componentWillUnmount
 getSnapshotBeforeUpdate() + componentDidUpdate()
+
 Redux
 Reducer
 Action
@@ -56,3 +57,64 @@ Update - Edit Product
 Delete - Delete Modal
 
 localstorage separate component - storage.js
+
+
+Redux
+Reducer
+Action
+State Management
+Redux Debugger
+Redux Devtool
+Dispatch action from View
+
+
+Redux 
+-----
+
+Step 1
+npm i redux react-redux
+
+Step 2
+Create redux and data folder inside src folder
+
+redux folder
+    reducers.js file - function which update state based on actions
+    https://github.com/programmingwithharsh/react_nov25/blob/main/src/redux/reducers.js
+
+    actions.js file - 3 actions, removeProduct, addProduct and loadProducts
+    https://github.com/programmingwithharsh/react_nov25/blob/main/src/redux/actions.js
+
+data folder
+    products.js -> move data inside this file
+    https://github.com/programmingwithharsh/react_nov25/blob/main/src/data/products.js
+
+Step 3
+main.jsx -> App.jsx file (current approach)
+
+Create ReduxExample.jsx component
+main.jsx -> ReduxExample.jsx -> App.jsx file (revised)
+
+https://github.com/programmingwithharsh/react_nov25/blob/main/src/ReduxExample.jsx
+
+- Redux configuration
+
+Step 4
+Store setup
+Update main.jsx file
+
+main.jsx -> ReduxExample.jsx file
+
+https://github.com/programmingwithharsh/react_nov25/blob/main/src/main.jsx
+https://github.com/programmingwithharsh/react_nov25/blob/main/src/ReduxExample.jsx
+
+Step 5
+call action inside component (dispatch action inside component)
+
+App.jsx file
+https://github.com/programmingwithharsh/react_nov25/blob/main/src/App.jsx
+
+Step 6
+Redux Debugger for debugging purpose - https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
+
+Angular 
+ngRx (Redux)
