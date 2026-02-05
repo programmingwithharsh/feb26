@@ -222,3 +222,54 @@ For reference - https://pastebin.com/7rzygQB5
 Assignment 7 - Create multiply arrow function
 ----------------------------------------------
 Create multiply arrow function which will take 2 params, multiply it and print result in console
+
+Assignment 8 - Implement Redux State Management using React
+-------------------------------------------------------------
+
+Implement Redux State Management using React
+
+Implement Redux Setup in react application
+
+Step 1
+npm i redux react-redux
+
+Step 2
+Create redux and data folder inside src folder
+
+redux folder
+    reducers.js file - function which update state based on actions
+    https://github.com/programmingwithharsh/feb26/blob/main/src/redux/reducers.js
+
+    actions.js file - 3 actions, removeProduct, addProduct and loadProducts
+    https://github.com/programmingwithharsh/feb26/blob/main/src/redux/actions.js
+
+data folder
+    products.js -> move data inside this file
+    https://github.com/programmingwithharsh/feb26/blob/main/src/data/products.js
+
+Step 3
+main.jsx -> App.jsx file (current approach)
+
+Create ReduxExample.jsx component
+main.jsx -> ReduxExample.jsx -> App.jsx file (revised)
+
+https://github.com/programmingwithharsh/feb26/blob/main/src/ReduxExample.jsx
+
+Step 4
+Store setup
+Update main.jsx file
+
+main.jsx -> ReduxExample.jsx file
+
+https://github.com/programmingwithharsh/feb26/blob/main/src/main.jsx
+https://github.com/programmingwithharsh/feb26/blob/main/src/ReduxExample.jsx
+
+Step 5
+call action inside component (dispatch action inside component)
+
+App.jsx file
+https://github.com/programmingwithharsh/feb26/blob/main/src/App.jsx
+
+Step 6
+Debugging code using Redux Devtool
+https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?pli=1
