@@ -1,0 +1,58 @@
+React Form validation using class component
+React Form set data in localstorage
+Navigate using class component
+Conditional Rendering in JSX
+
+Functional Component Hooks
+withoutContext
+createContext
+useContext
+Controlled and uncontrolled component
+useRef
+useReducer
+Pure class component
+Class Component lifecycle
+componentWillUnmount
+getSnapshotBeforeUpdate() + componentDidUpdate()
+Redux
+Reducer
+Action
+State Management
+Redux Debugger
+Redux Devtool
+Dispatch action from View
+Promise
+Debug Reactjs code using VS code
+Assignment
+Project Update 
+Project Demo for Anjaneya, Srinath and Sanal
+
+
+App.jsx (parent) - state = products
+    pass products as a props to child component 
+        define a function which update state and we can pass this function as a props to child component
+            AddProduct (child) - 
+                adding data in localstorage
+
+
+
+App.jsx (parent) - state = products
+    pass products as a props to child component 
+        AddProduct (child) - 
+            adding data in localstorage
+
+
+
+Scenario 1
+App.jsx - products
+    <ProductList products={products} />
+
+
+Users CRUD 
+----------
+Create - Add Product
+Read - Displaying Product List
+Update - Edit Product 
+Delete - Delete Modal
+
+localstorage separate component - storage.js

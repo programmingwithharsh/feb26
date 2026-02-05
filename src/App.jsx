@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import ProductList from "./ProductList";
 import Title from "./Title";
 import Welcome from "./Welcome";
@@ -12,8 +13,8 @@ import ProductDetail from "./ProductDetails";
 import EditProduct from "./EditProduct";
 
 function App(props) {
-    console.log(props);
-    let products = [
+
+    const defaultProducts = [
         {
             "productId": 1,
             "productName": "Leaf Rake",
@@ -65,6 +66,37 @@ function App(props) {
             "imageUrl": "https://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
         }
     ];
+
+    const [products, setProducts] = useState(defaultProducts);
+
+    // componentDidMount equivalent
+    useEffect(() => {
+
+        if (!localStorage.getItem("products")) {
+            localStorage.setItem("products", JSON.stringify(defaultProducts));
+        }
+
+        const storedProducts = JSON.parse(localStorage.getItem("products"));
+        setProducts(storedProducts);
+
+    }, []);
+
+    const addNewProduct = (productSubmitted) => {
+        setProducts(prev => {
+            const updated = [...prev, productSubmitted];
+            localStorage.setItem("products", JSON.stringify(updated));
+            return updated;
+        });
+    };
+
+    const updateProduct = (updatedProduct) => {
+        setProducts(prev =>
+            prev.map(p =>
+                p.productId === updatedProduct.productId ? updatedProduct : p
+            )
+        );
+    };
+
     return (
         <BrowserRouter>
             <Routes>
@@ -72,9 +104,9 @@ function App(props) {
                     <Route index element={<Welcome />} />
                     <Route path="/products" element={<ProductList products={products} />} />
                     <Route path="/products/:id" element={<ProductDetail />} />
-                    <Route path="/editproduct/:id" element={<EditProduct />} />
+                    <Route path="/editproduct/:id" element={<EditProduct onUpdateProduct={updateProduct} />} />
+                    <Route path="/addproduct" element={<AddProduct onAddProduct={addNewProduct} />} />
                     <Route path="/title" element={<Title username={props.usernameProps} />} />
-                    <Route path="/addproduct" element={<AddProduct />} />
                     <Route path="/hooks" element={<HooksExample />} />
                     <Route path="*" element={<PageNotFound />} />
                 </Route>
