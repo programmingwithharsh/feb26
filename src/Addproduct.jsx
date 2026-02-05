@@ -9,6 +9,7 @@ class AddProduct extends React.Component {
             redirect: false,
             address: "Mumbai"
         }
+        console.log("AddProduct Mounted");
     }
 
     handleSubmit = (event) => {
@@ -44,6 +45,10 @@ class AddProduct extends React.Component {
                 redirect: true
             })
         }
+    }
+
+    componentWillUnmount() {
+        console.log("AddProduct UnMounted");
     }
 
     render() {

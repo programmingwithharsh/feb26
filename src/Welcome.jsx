@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "./Carousel";
 
 class Welcome extends React.Component {
+    // class Welcome extends React.PureComponent {
     constructor() { // Component lifecycle
         super();
         this.state = {
@@ -23,6 +24,21 @@ class Welcome extends React.Component {
             username: "Pranav",
             address: "Mumbai"
         })
+    }
+
+    /*
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        document.getElementById("div1").innerHTML = "Before upate username is " + prevState.username
+        return true;
+    }
+
+    componentDidUpdate() {
+        document.getElementById("div2").innerHTML = "After upate username is " + this.state.username
+    }
+    */
+
+    shouldComponentUpdate() {
+        return true;
     }
 
     componentDidMount() {
@@ -53,6 +69,8 @@ class Welcome extends React.Component {
             <Carousel />
             <h1>This is welcome class component</h1>
             <h2>Username is {this.state.username}</h2>
+            <div id="div1"></div>
+            <div id="div2"></div>
             <div><button className="btn btn-primary m-2" onClick={this.updateUsername}>Update Username</button></div>
             <div><button className="btn btn-primary m-2" onClick={this.updateDetails}>Update Details</button></div>
         </div>

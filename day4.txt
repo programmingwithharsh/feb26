@@ -1,20 +1,8 @@
+Project Demo for Anjaneya, Chand, Srinath, Sanal and Aneesh
 React Form validation using class component
 React Form set data in localstorage
 Navigate using class component
 Conditional Rendering in JSX
-
-Functional Component Hooks
-withoutContext
-createContext
-useContext
-Controlled and uncontrolled component
-useRef
-useReducer
-Pure class component
-Class Component lifecycle
-componentWillUnmount
-getSnapshotBeforeUpdate() + componentDidUpdate()
-
 Redux
 Reducer
 Action
@@ -22,12 +10,27 @@ State Management
 Redux Debugger
 Redux Devtool
 Dispatch action from View
-Promise
-Debug Reactjs code using VS code
+Functional Component Hooks
+withoutContext
+createContext
+useContext
+Controlled and uncontrolled component
+useRef
+useReducer
+Custom Hook
+Pure class component
+Class Component lifecycle
+componentWillUnmount
+getSnapshotBeforeUpdate() + componentDidUpdate()
 Assignment
 Project Update 
-Project Demo for Anjaneya, Srinath and Sanal
 
+Tomorrow
+getDerivedStateFromProps
+Promise
+Debug Reactjs code using VS code
+Next.js
+Redux toolkit 
 
 App.jsx (parent) - state = products
     pass products as a props to child component 
@@ -118,3 +121,24 @@ Redux Debugger for debugging purpose - https://chromewebstore.google.com/detail/
 
 Angular 
 ngRx (Redux)
+
+
+Functional Component Hooks
+withoutContext
+
+Without Context
+In Component 1, Username is Anjaneya
+In Component 5, Username is Anjaneya
+
+C1 -> C2 -> C3 -> C4 -> C5
+
+createContext
+useContext
+
+
+
+14 seconds
+callback functions 
+
+9 seconds, 1 seconds
+10 seconds 
