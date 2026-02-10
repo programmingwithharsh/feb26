@@ -12,6 +12,12 @@ class AddProduct extends React.Component {
         console.log("AddProduct Mounted");
     }
 
+    static getDerivedStateFromProps(props, state) { // update state "Mumbai" from props "Hyderabad"
+        return {
+            address: props.address
+        }
+    }
+
     handleSubmit = (event) => {
         event.preventDefault(); // stop page refresh when i click on submit
         const productName = event.target.elements.productName.value; // uses DOM values

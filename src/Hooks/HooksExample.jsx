@@ -5,6 +5,12 @@ import ControlledExample from "./ControlledExample";
 import UnControlledExample from "./UnControlledExample";
 import UseReducerHookExample from "./UseReducerHookExample";
 import useFetch from "./useFetch";
+import UseEffectExample2 from "./UseEffectExample2";
+import UseMemoExample from "./UseMemoExample";
+import ErrorBoundary from "./ErrorBoundary";
+import BuggyComponent from "./BuggyComponent";
+import AsyncCallsExample from "./AsyncCallsExample";
+import ReactMemoExample from "./ReactMemoExample";
 
 function HooksExample() {
 
@@ -23,6 +29,16 @@ function HooksExample() {
         {
             data.map(user => <p key={user.id}>{user.name}</p>)
         }
+
+        <UseMemoExample />
+        <ReactMemoExample />
+
+        <AsyncCallsExample />
+        <UseEffectExample2 />
+        <ErrorBoundary>
+            <BuggyComponent />
+        </ErrorBoundary>
+        
         <UseReducerHookExample />
         <UnControlledExample />
         <ControlledExample />

@@ -1,0 +1,108 @@
+Project Demo for Satya, Raj Mohan, Veena, Pranit, Kanoj, Pranav, Rajesh, Prashika, Virendra (9 Demo)
+Create next.js application
+Next.js Routing
+Slug Url
+Navigation
+useParams in Next.js
+Link in Next.js
+Creating APIs using Next.js
+Created GET, POST, PUT and DELETE API using next.js
+Consume Next APIs internally using fetch method
+Connect Next.js with Mongodb using Mongoose library
+Use env file
+Next.js Layouts
+Debug Reactjs code using VS code
+Comparison between Angular, React and Next.js
+Unit Testing
+Redux Thunk 
+Redux Saga
+getDerivedStateFromProps
+Promise 
+Redux toolkit 
+Queries Discussion
+Post Assessment 
+Feedback 
+Revision
+
+
+
+Next.js Installation
+---------------------
+
+Step 1
+npx create-next-app@latest
+
+harsh@Harshs-MacBook-Air day5 % npx create-next-app@latest
+✔ What is your project named? … dashboard-next
+✔ Would you like to use the recommended Next.js defaults? › No, customize settings
+✔ Would you like to use TypeScript? … No / Yes
+✔ Which linter would you like to use? › ESLint
+✔ Would you like to use React Compiler? … No / Yes
+✔ Would you like to use Tailwind CSS? … No / Yes
+✔ Would you like your code inside a `src/` directory? … No / Yes
+✔ Would you like to use App Router? (recommended) … No / Yes
+✔ Would you like to customize the import alias (`@/*` by default)? … No / Yes
+Creating a new Next.js app in /Users/harsh/Desktop/React_Redux_Next/day5/dashboard-next.
+
+Using npm.
+
+Initializing project with template: app 
+
+
+
+
+Client side 
+------------
+HTML 
+CSS 
+CSS Framework
+    Bootstrap 
+    Tailwind
+Javascript
+Javascript library and Framework 
+    React library
+    Angular 
+    Vue 
+    Next.js Framework
+        uses React library
+
+Mobile Framework
+    React Native 
+        uses React library
+    Ionic Framework
+
+Server Side Database, Filesystem, Email protocols ..
+----------------------------------------------------
+Java 
+Php 
+Python
+Perl 
+Asp.net 
+Ruby on Rails 
+Node.js (Popular)
+
+
+
+In Next.js 
+dashboard-next-example/pages/api/product
+
+GET 
+GET INDIVIDUAL
+POST 
+PUT 
+DELETE 
+
+Next.js Framework
+    uses React library
+        Routing
+    Routing 
+
+
+Next.js 
+--------
+Backend (API folder)
+    Mongodb (Mongoose library uses schema)
+        Collection 
+
+Frontend (SRC folder)
+    React 

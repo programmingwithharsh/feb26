@@ -14,6 +14,6 @@ const ProductReducer = (state = products, action) => {
         default:
             return state; // by default in any other action it will return all products
     }
-}
+};
 
 export default ProductReducer;
